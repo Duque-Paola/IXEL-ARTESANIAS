@@ -37,3 +37,12 @@ body {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+@font-face {
+  font-family: myFont; /* set name */
+  src: url(../../fonts/TheFarmerTextured.otf); /* url of the font */
+}
+
+h1{
+    font-family: myFont;
+}
