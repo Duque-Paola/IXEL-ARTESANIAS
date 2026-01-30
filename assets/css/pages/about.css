@@ -1,0 +1,50 @@
+.carousel {
+  margin: 100px auto;
+  width: 90%;
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 50s infinite linear;
+    padding-right: 1em;
+}
+.card {
+  flex: 0 0 10em;
+  height: 10em;
+  padding: 1em;
+  background: rgb(106, 41, 41);
+  font-size: 2rem;
+  border-radius: .2em;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: cover;
+}
+.card p{
+    margin-top: 10px;
+}
+
+
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+img {
+    border-radius: 1em;
+}
