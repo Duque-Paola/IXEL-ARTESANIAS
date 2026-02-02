@@ -143,7 +143,6 @@
         /* Texto un poco más chico */
     }
 
-    /* Importante: Ajustar la velocidad en móvil si se siente muy rápido */
     .aboutcarousel-track {
         animation-duration: 30s;
         /* A veces más rápido se ve más fluido en móvil, o súbelo a 60s si quieres calma */
