@@ -30,12 +30,10 @@ export function createFooter(){
                         </ul>
                     </div>
 
-                    <!-- HASTA AQUI ES LA SECCIÓN-->
-
 
                     <div class="footer-links">
                         <h4>Síguenos</h4>
-                        <div class="social-link"></div>
+                        <div></div>
                             <a href="#"><img src="/assets/img/icons/facebook-3-xxl.png" height="35"></i></a>
                             <a href="#"><img src="/assets/img/icons/linkedin-3-xxl.png" height="35"></a>
                             <a href="#"><img src="/assets/img/icons/whatsapp-xxl.png" height="35"></a>
