@@ -5,26 +5,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IXEL ARTESANIAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/assets/css/pages/carrousel.css">
+    <link rel="stylesheet" href="/assets/css/pages/about.css">
 
 </head>
 
 <body>
-
-
-
-    
+    <header id="navBar"> </header>
     <main>
+        <section class="py-5 bg-dark text-white text-center shadow-sm mb-5">
+            <div class="container">
+                <h1 class="">About Us</h1>
+                <p class="tracking-wider">Handmade with Passion</p>
+            </div>
+        </section>
 
 
+        <section class="container my-5">
+            <div class="card about border-0 overflow-hidden">
+                <div class="row g-0">
+
+                    <div class="col-12 col-md-5 about-img-wrapper">
+                        <img src="/assets/img/martina.png" alt="Sobre nosotros" class="img-fluid about-img">
+                    </div>
+
+                    <div class="col-12 col-md-7">
+                        <div class="card-body p-4 p-md-5 d-flex flex-column justify-content-center h-100">
+                            <h3 class="card-title mb-3">Colección Martina:</h3>
+                            <p class="card-text about-text animation" id="aboutText">
+                                En honor a la artista, el puntillismo se basa en pequeños puntos de color, aplicados con
+                                precisión, colocados muy cerca unos de otros. En lugar de mezclar los colores en la
+                                paleta, los artistas colocan puntos de color puro uno al lado del otro. El ojo del
+                                espectador los mezcla ópticamente, creando una luminosidad e intensidad únicas. Al ver
+                                la obra desde lejos, los puntos se mezclan en el ojo del espectador, formando formas y
+                                colores. utiliza únicamente pequeños puntos de color puro.
+                            </p>
+                        
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Editar Texto
+                                </button>
+                            </div>
 
 
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contenido</h1>
+                                    <button id="editBtn" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <textarea id="editTextArea" class="form-control" rows="6"></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button id="saveBtn" type="button" class="btn btn-primary">Guardar</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </section>
 
     </main>
 
 
+    <section class="container-class">
+        <div class="carousel-container">
+            <div class="carousel-track">
+
+                <div class="group">
+                    <div class="aboutcard-carousel">
+                        <img src="/assets/img/Pao-1.png" alt="Paola" class="profile-photo">
+                        <p class="name">Paola Salgado</p>
+                        <div class="social-container">
+                            <a href="#" class="social-link"><img src="/assets/img/gitHub.svg" class="social-icon"></a>
+                            <a href="#" class="social-link"><img src="/assets/img/linkedin.svg" class="social-icon"></a>
+                        </div>
+                    </div>
+
+                    <div class="aboutcard-carousel">
+                        <img src="/assets/img/Axl-1.png" alt="Axl" class="profile-photo">
+                        <p class="name">Axl Olvera</p>
+                        <div class="social-container">
+                            <a href="https://github.com/AxlOlvera" target="_blank" class="social-link"><img
+                                    src="/assets/img/gitHub.svg" class="social-icon"></a>
+                            <a href="#" class="social-link"><img src="/assets/img/linkedin.svg" class="social-icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group" aria-hidden="true">
+                    <div class="aboutcard-carousel">
+                        <img src="/assets/img/Sucres.png" alt="Sucrees" class="profile-photo">
+                        <p class="name">Liliana Sucres</p>
+                        <div class="social-container">
+                            <a href="#" target="_blank" class="social-link"><img src="/assets/img/gitHub.svg"
+                                    class="social-icon"></a>
+                            <a href="#" class="social-link"><img src="/assets/img/linkedin.svg" class="social-icon"></a>
+
+                        </div>
+                    </div>
+
+                    <div class="aboutcard-carousel">
+                        <img src="/assets/img/Jordi-1.png" alt="Axl" class="profile-photo">
+                        <p class="name">Jordy Hernandez</p>
+                        <div class="social-container">
+                            <a href="https://github.com/AxlOlvera" target="_blank" class="social-link"><img
+                                    src="/assets/img/gitHub.svg" class="social-icon"></a>
+                            <a href="#" class="social-link"><img src="/assets/img/linkedin.svg" class="social-icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group" aria-hidden="true">
+                    <div class="aboutcard-carousel">
+                        <img src="/assets/img/miau.jpg" alt="Sucrees" class="profile-photo">
+                        <p class="name">Diego Lopez</p>
+                        <div class="social-container">
+                            <a href="#" target="_blank" class="social-link"><img src="/assets/img/gitHub.svg"
+                                    class="social-icon"></a>
+                            <a href="#" class="social-link"><img src="/assets/img/linkedin.svg" class="social-icon"></a>
+
+                        </div>
+                    </div>
+
+                    <div class="aboutcard-carousel">
+                        <img src="/assets/img/Genaro-1.png" alt="Axl" class="profile-photo">
+                        <p class="name">Genaro de Leon</p>
+                        <div class="social-container">
+                            <a href="https://github.com/AxlOlvera" target="_blank" class="social-link"><img
+                                    src="/assets/img/gitHub.svg" class="social-icon"></a>
+                            <a href="#" class="social-link"><img src="/assets/img/linkedin.svg" class="social-icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group" aria-hidden="true">
+                    <div class="aboutcard-carousel">
+                        <img src="/assets/img/kiji.jpg" alt="Isaac Lopez" class="profile-photo">
+                        <p class="name">Isaac Lopez</p>
+                        <div class="social-container">
+                            <a href="#" target="_blank" class="social-link"><img src="/assets/img/gitHub.svg"
+                                    class="social-icon"></a>
+                            <a href="#" class="social-link"><img src="/assets/img/linkedin.svg" class="social-icon"></a>
+
+                        </div>
+                    </div>
+
+                    <div class="aboutcard-carousel">
+                        <img src="/assets/img/ana.jpg" alt="Axl" class="profile-photo">
+                        <p class="name">Ursula Vela</p>
+                        <div class="social-container">
+                            <a href="https://github.com/AxlOlvera" target="_blank" class="social-link"><img
+                                    src="/assets/img/gitHub.svg" class="social-icon"></a>
+                            <a href="#" class="social-link"><img src="/assets/img/linkedin.svg" class="social-icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group" aria-hidden="true">
+                    <div class="aboutcard-carousel">
+                        <img src="/assets/img/bb.jpg" alt="Isaac Lopez" class="profile-photo">
+                        <p class="name">Diana Ibarra</p>
+                        <div class="social-container">
+                            <a href="#" target="_blank" class="social-link"><img src="/assets/img/gitHub.svg"
+                                    class="social-icon"></a>
+                            <a href="#" class="social-link"><img src="/assets/img/linkedin.svg" class="social-icon"></a>
+
+                        </div>
+                    </div>
+
+                    <div class="aboutcard-carousel">
+                        <img src="/assets/img/Carlos-1.png" alt="Axl" class="profile-photo">
+                        <p class="name">Carlos Guadarrama</p>
+                        <div class="social-container">
+                            <a href="https://github.com/AxlOlvera" target="_blank" class="social-link"><img
+                                    src="/assets/img/gitHub.svg" class="social-icon"></a>
+                            <a href="#" class="social-link"><img src="/assets/img/linkedin.svg" class="social-icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/pages/editAbout.js"></script>
 </body>
 
 </html>
