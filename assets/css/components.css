@@ -14,28 +14,29 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+ 
+/*El footer como tal*/
 .footer {
   background-color: #683531;
-  padding: 80px 0;
+  padding: 10px;
 }
 
 .footer-row {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .footer-links h4 {
   font-size: 20px;
   color: #f8e8cf;
   margin-bottom: 25px;
-  font-weight: 600px;
   display: inline-block;
-  padding-bottom: 10px;
-  display: inline-block;
+  border-bottom: 2px solid #f8e8cf;
+  padding-bottom: 5px;
   padding: 20px;
-  line-height: 2;
-
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer-links ul li a{
@@ -50,16 +51,9 @@ body {
 
 .social-link{
 
-  color: beige;
-  padding: 20px;
+  padding-left: 300px;
+  align-content: end;
 
-  
-
-}
-
-.fab fa-facebook-f{
-
-  color: aqua;
 }
 
 .imagenFooter{
