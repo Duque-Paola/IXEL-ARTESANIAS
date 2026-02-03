@@ -30,16 +30,41 @@ body {
   color: #f8e8cf;
   margin-bottom: 25px;
   font-weight: 600px;
-  border-bottom: 2px solid #f8e8cf;
   display: inline-block;
   padding-bottom: 10px;
   display: inline-block;
+  padding: 20px;
+  line-height: 2;
 
 }
 
 .footer-links ul li a{
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
-  color: black;
+  color: beige;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
+  padding: 20px;
+
 }
 
+.social-link{
+
+  color: beige;
+  padding: 20px;
+
+  
+
+}
+
+.fab fa-facebook-f{
+
+  color: aqua;
+}
+
+.imagenFooter{
+
+  background-image: url(../images/Pattern.png);
+  height: 55px;
+
+}
