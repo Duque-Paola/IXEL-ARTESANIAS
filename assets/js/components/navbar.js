@@ -13,8 +13,22 @@ export function createNavbar() {
               <a class="nav-link" href="../../../index.html">Inicio</a>
             </li>
             <li class="nav-item">
+            <a class="nav-link" href="../../pages/public/products.html">Products</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="/pages/public/about.html">about</a>
             </li>
+                  <!-- Carrito de compras -->
+            <li class="nav-item position-relative">
+              <a class="nav-link" href="../../pages/public/cart.html">
+                🛒
+                <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  0
+                </span>
+              </a>
+            </li>
+            <!-- Carrito de compras -->
+
           </ul>
         </div>
       </div>
