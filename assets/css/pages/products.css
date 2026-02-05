@@ -194,4 +194,22 @@ body {
 
 
 
- 
+ /* imagenes grandes con zoom */
+ /* Imagen: transición suave y zoom al hover */
+.product-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+    display: block;
+} 
+
+/* Zoom al pasar el mouse */
+ .product-image:hover img {
+    transform: scale(1.2);  /* aumenta un 20% */
+}  
+
+/* Opcional: sombra al hover para resaltar */
+ .product-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.4s ease;
+} 
