@@ -52,10 +52,9 @@ export function createNavbar() {
 
       <!-- MENÚ DE NAVEGACIÓN -->
       <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="#featured">Featured</a>
+        <a href="/index.html">Home</a>
+        <a href="/pages/public/about.html">About Us</a>
         <a href="pages/public/products.html">Products</a>
-        <a href="pages/public/about.html">About Us</a>
       </nav>
     </header>
   `;
