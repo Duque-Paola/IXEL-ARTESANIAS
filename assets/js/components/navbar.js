@@ -45,7 +45,7 @@ export function createNavbar() {
 
       <!-- LOGO CENTRADO -->
       <div class="logo">
-        <a href="index.html">
+        <a href="/index.html">
           <img src="assets/images/Marca-de-agua2.png" alt="Logo de la marca">
         </a>
       </div>
