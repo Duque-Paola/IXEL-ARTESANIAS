@@ -5,17 +5,11 @@
   list-style: none;
 }
 
-body {
-  font-family: 'Times New Roman', Times, serif;
-  text-transform: capitalize;
-}
-
 .container{
   max-width: 1200px;
   margin: 0 auto;
 }
  
-/*El footer como tal*/
 .footer {
   background-color: #683531;
   padding: 10px;
@@ -50,15 +44,7 @@ body {
 }
 
 .footer-link{
-
   padding-left: 300px;
   align-content: end;
-
 }
 
-.imagenFooter{
-
-  background-image: url(../images/Pattern.png);
-  height: 55px;
-
-}
