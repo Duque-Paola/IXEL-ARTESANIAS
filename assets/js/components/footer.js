@@ -43,11 +43,7 @@ export function createFooter(){
                     </div>
                 </div>
             </div>
-        </footer>   
-        <div class="imagenFooter"> </div>` 
-
-
+        </footer>`
 }
-
 
       

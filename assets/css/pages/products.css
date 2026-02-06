@@ -5,45 +5,7 @@ body {
     color: #000;
 }
 
-/* Tarjetas de Categoría */
-.category-card {
-    border: none;
-    background: transparent;
-}
 
-.category-image-container {
-    background-color: #f6f3eb; /* El tono crema de tu diseño */
-    border-radius: 16px;
-    aspect-ratio: 4 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin-bottom: 12px;
-}
-
-.category-image-container img {
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
-}
-
-.category-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 4px;
-}
-
-.category-name {
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-.category-year {
-    color: #b0b0b0;
-    font-size: 0.85rem;
-}
 
 /* Sección de Productos */
 .section-title {
@@ -52,53 +14,6 @@ body {
     margin-top: 60px;
     margin-bottom: 30px;
 }
-
-.product-card {
-    background: #fff;
-    border-radius: 14px;
-    padding: 16px;
-    text-align: center;
-    height: 100%;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-}
-
-.product-image {
-    aspect-ratio: 1 / 1;
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.product-image img {
-    width: 65%;
-    height: 65%;
-    object-fit: contain;
-}
-
-.product-name {
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-
-.product-price {
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 6px;
-}
-
-.product-description {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 12px;
-}
-
 
 
 
@@ -186,12 +101,7 @@ body {
 }
 
 
-/* Contenedor de la imagen: recorta cualquier desbordamiento */
-.product-image {
-    overflow: hidden;
-    border-radius: 8px;  /* opcional, bordes redondeados */
-}
 
 
 
- 
+
