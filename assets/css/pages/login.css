@@ -42,7 +42,7 @@ main {
 
 /* MODO LOGIN */
 .container.login-mode .image-panel {
-    transform: translateX(0%);
+    transform: translateX(100%);
     background-image: url("/assets/img/products/Tortillero\ Martina\ fondo\ blanco.png");
 }
 
