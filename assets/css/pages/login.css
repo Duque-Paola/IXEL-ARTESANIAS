@@ -42,14 +42,14 @@ main {
 
 /* MODO LOGIN */
 .container.login-mode .image-panel {
-    transform: translateX(0%);
+    transform: translateX(100%);
     background-image: url("/assets/img/products/Tortillero\ Martina\ fondo\ blanco.png");
 }
 
 /* MODO REGISTRO */
 .container.register-mode .image-panel {
-    transform: translateX(100%);
-    background-image: url("/assets/img/main/tapa\ Martina.jpeg");
+    transform: translateX(0%);
+    background-image: url("/assets/img/tapa\ Martina.jpeg");
 }
 
 /* FORMULARIOS */
