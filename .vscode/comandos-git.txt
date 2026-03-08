@@ -1,0 +1,10 @@
+Para revertir todo los commits:
+git reset --hard HEAD~<numero de commits>
+
+git reset --hard <nombre de la rama para que tengan el mismo historial de cambios>
+git reset --hard origin/main
+git reset --hard main
+
+
+Revierte cambios y te permite mantenerlos para ir descartando
+git reset --soft HEAD~<numero de commits>
