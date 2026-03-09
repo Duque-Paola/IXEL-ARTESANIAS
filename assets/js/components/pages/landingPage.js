@@ -23,10 +23,14 @@ import { addToCart } from '/assets/js/utils/storage.js';
 
 
 //Carrusel del hero
-// let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
 
-function changeSlide(direction) {
+let currentSlide = 0;
+
+//Carrusel del hero buttons
+window.changeSlidebyButton = function (direction) {
+
+const slides = document.querySelectorAll( '.slide');
+
     // Quitar clase activa
     slides[currentSlide].classList.remove('active');
     
@@ -36,11 +40,7 @@ function changeSlide(direction) {
     // Añadir clase activa
     slides[currentSlide].classList.add('active');
 }
-
-// Opcional: Cambio automático cada 5 segundos
-setInterval(() => changeSlide(1), 5000);
-
-
+setInterval(() => window.changeSlidebyButton(1), 5000);
 
 // ─── PARALLAX DEL HERO ─────────────────────────────────────────
 // Guard: no registra el listener si los elementos no existen.
