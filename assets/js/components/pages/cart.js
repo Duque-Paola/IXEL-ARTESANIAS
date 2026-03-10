@@ -81,19 +81,20 @@ console.log('All .listCart elements:', document.querySelectorAll('.listCart'));
 
       const li = document.createElement('li');
       li.innerHTML = `
-        <img
-          src="${item.imagen || ''}"
-          alt="${item.name  || 'Producto'}"
-          onerror="this.src='/assets/img/products/Tortillero Martina Grises.png';this.onerror=null"
-        >
-        <div>${item.name || '—'}</div>
-        <div class="price">$${(item.price || 0).toFixed(2)}</div>
-        <div>
-          <button class="qty-minus" data-id="${item.id}" type="button" ${item.quantity === 1 ? 'disabled' : ''}>−</button>
-          <div class="count">${item.quantity || 1}</div>
-          <button class="qty-plus"  data-id="${item.id}" type="button">+</button>
-        </div>
-      `;
+  <img
+    src="${item.imagen || ''}"
+    alt="${item.name  || 'Producto'}"
+    onerror="this.src='/assets/img/products/Tortillero Martina Grises.png';this.onerror=null"
+  >
+  <div>${item.name || '—'}</div>
+  <div class="price">$${(item.price || 0).toFixed(2)}</div>
+  <div class="cart-controls">
+    <button class="qty-minus" data-id="${item.id}" type="button" ${item.quantity === 1 ? 'disabled' : ''}>−</button>
+    <div class="count">${item.quantity || 1}</div>
+    <button class="qty-plus" data-id="${item.id}" type="button">+</button>
+    <button class="remove-item" data-id="${item.id}" type="button">🗑</button>
+  </div>
+`;
       listCartEl.appendChild(li);
     });
 
@@ -103,7 +104,7 @@ console.log('All .listCart elements:', document.querySelectorAll('.listCart'));
         PAGAR: $${totalPrice.toFixed(2)}
       </div>
     `;
-    totalEl.querySelector('[data-action="pay"]')?.addEventListener('click', () => {
+    totalEl.addEventListener('click', () => {
       window.location.href = '/pages/public/car.html';
     });
 
@@ -114,33 +115,34 @@ console.log('All .listCart elements:', document.querySelectorAll('.listCart'));
   // Delegación en listCartEl. String() en ambos lados.
   // FIX: No permite que quantity baje de 1
 
-  listCartEl?.addEventListener('click', e => {
-    const btn = e.target.closest('.qty-minus, .qty-plus');
-    if (!btn) return;
+ listCartEl?.addEventListener('click', e => {
+  const btn = e.target.closest('.qty-minus, .qty-plus, .remove-item');
+  if (!btn) return;
 
-    const cart  = getCart();
-    const index = cart.findIndex(
-      item => String(item.id) === String(btn.dataset.id)
-    );
-    if (index < 0) return;
+  const cart  = getCart();
+  const index = cart.findIndex(
+    item => String(item.id) === String(btn.dataset.id)
+  );
+  if (index < 0) return;
 
-    if (btn.classList.contains('qty-plus')) {
-      cart[index].quantity += 1;
-      saveCart(cart);
-      window.dispatchEvent(new StorageEvent('storage', { key: 'cart' }));
-      renderCart();
-    } else if (btn.classList.contains('qty-minus')) {
-      //  Solo decrementar si quantity > 1
-      // Si quantity === 1, simplemente no hacer nada
-      if (cart[index].quantity > 1) {
-        cart[index].quantity -= 1;
-        saveCart(cart);
-        window.dispatchEvent(new StorageEvent('storage', { key: 'cart' }));
-        renderCart();
-      }
-      // Si quantity === 1, salir sin hacer nada (no guarda, no renderiza)
+  if (btn.classList.contains('qty-plus')) {
+    cart[index].quantity += 1;
+  }
+
+  else if (btn.classList.contains('qty-minus')) {
+    if (cart[index].quantity > 1) {
+      cart[index].quantity -= 1;
     }
-  });
+  }
+
+  else if (btn.classList.contains('remove-item')) {
+    cart.splice(index, 1); // remove product completely
+  }
+
+  saveCart(cart);
+  window.dispatchEvent(new StorageEvent('storage', { key: 'cart' }));
+  renderCart();
+});
 
   // ─── SINCRONIZACIÓN ──────────────────────────────────────────
   // Escucha StorageEvent({key:'cart'}) que products.js y landingPage.js
