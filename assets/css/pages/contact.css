@@ -57,7 +57,7 @@
     left: 0;
     right: 0;
     height: 100px;
-    background: linear-gradient(to bottom, transparent, #ffffff);
+    background: linear-gradient(to bottom, transparent, #f8e8cf);
 }
 
 .contact__hero-container {
@@ -69,10 +69,9 @@
 
 .contact__hero-title {
     font-family: var(--contact-font-title);
-    font-size: clamp(50px, 9vw, 90px);
-    color:#f8e8cfa9;
+    font-size: clamp(90px, 10vw, 120px);
+    color:#f8e8cfc9;
     margin: 0;
-    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.3);
     letter-spacing: 3px;
     padding-top: 36px;
 }
