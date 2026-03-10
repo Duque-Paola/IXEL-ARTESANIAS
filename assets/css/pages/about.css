@@ -27,27 +27,16 @@
 
 /* ─── HERO ──────────────────────────────────────────── */
 
-.about-hero {
-  background-color: var(--color-primary);
-  color: var(--color-text-light);
-  text-align: center;
-  padding: 4rem 1rem;
-}
-
-.about-hero__title {
+.section-divider container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+} 
+.section-divider-title {
   font-family: 'TheFarmerTextured', serif;
-  font-size: clamp(2rem, 6vw, 3.5rem);
-  margin: 0 0 0.5rem;
-  letter-spacing: 0.02em;
-}
+  font-size: clamp(90px, 10vw, 120px);
+  color: var(--color-primary);
+  padding-top: 90px;
 
-.about-hero__subtitle {
-  font-family: var(--font-primary);
-  font-size: 0.95rem;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  opacity: 0.75;
-  margin: 0;
 }
 
 /* ─── SECCIÓN MARTINA ───────────────────────────────── */
