@@ -37,8 +37,8 @@
 
 
 body {
-   background: #ebddc5;
-   background: linear-gradient(0deg, rgba(235, 221, 197, 1) 56%, rgba(255, 255, 255, 1) 100%);
+  background: #ebddc5;
+  background: linear-gradient(to bottom, rgba(235, 221, 197, 1) 80%, rgba(255, 255, 255, 1) 100%);
     color: var(--color-cafe);
     font-family: var(--font-cuerpo);
     margin: 0;
@@ -54,7 +54,15 @@ body {
     margin: 50px 0;
     letter-spacing: 3px;
 }
-
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background: linear-gradient(to bottom, transparent, rgba(235, 221, 197, 1) 80%);
+}
 
 /* Sección Imprescindibles */
 .imprescindibles-container {
@@ -89,19 +97,6 @@ body {
     color: #666;
     margin-bottom: 15px;
 }
-
-.btn-buy {
-    background: var(--color-vino);
-    color: white;
-    border: none;
-    padding: 10px 40px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: opacity 0.3s;
-}
-
-.btn-buy:hover { opacity: 0.8; }
-
 .learn-more {
     display: block;
     margin-top: 10px;
@@ -141,4 +136,25 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+}
+.product-card-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.text-header {
+    text-align: center;
+    padding-top: 85px;
+    font-family: var(--font-titulos);
+    color: var(--color-cafe);
+    font-weight: 100;
+    text-align: center;
+    font-size: clamp(80px, 10vw, 120px);
+    margin: 50px 0;
+    letter-spacing: 3px;
+
 }
