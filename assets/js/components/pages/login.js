@@ -137,6 +137,16 @@ const admin = {
     nombre: "Administrador"
 };
 
+//cambio entre login y registro function 
+function toggleForm() { 
+    const container = document.getElementById("container"); 
+    if (container.classList.contains("login-mode")) { 
+        container.classList.remove("login-mode"); 
+        container.classList.add("register-mode"); 
+    } else { 
+        container.classList.remove("register-mode"); 
+        container.classList.add("login-mode"); } 
+    }
 //cambio entre login y registro
 function toggleForm() {
     const container = document.getElementById("container");
