@@ -1,0 +1,28 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "seeMore": "Ver más"
+  },
+  "materials": {
+    "title": "De qué estamos hechos",
+    "parotaTitle": "Parota",
+    "parotaText": "De vetas profundas y carácter indomable. Seleccionamos la madera de Parota más fina de Jalisco para crear piezas que respiran la fuerza de nuestra tierra.",
+
+    "ironTitle": "Hierro",
+    "ironText": "Donde el fuego se vuelve arte. Nuestros mangos de hierro fundido son detallados a mano por artesanos mexicanos, logrando figuras únicas e irrepetibles.",
+
+    "clayTitle": "Barro",
+    "clayText": "Moldeado por la historia. Cada pieza nace del barro chiapaneco, transformado por las manos y el pincel de mujeres indígenas que plasman su cosmovisión en cada trazo.",
+
+    "metalTitle": "Metal",
+    "metalText": "Una flor que nunca marchita. Este diseño emblemático rinde homenaje a La Ciudad de las Rosas (Guadalajara), capturando la delicadeza de sus rosas en metal forjado con maestría local."
+  },
+  "products": {
+    "featured": "Productos Imprescindibles"
+  }
+}
