@@ -31,6 +31,7 @@ export function createFooter() {
             </ul>
           </section>
 
+
           <!-- Información -->
           <section class="footer__section">
             <h4 class="footer__title">Información</h4>
