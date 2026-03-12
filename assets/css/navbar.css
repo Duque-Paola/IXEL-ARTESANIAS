@@ -513,3 +513,15 @@
   
 
 }
+/* ============================================
+   DROPDOWN DE USUARIO
+   ============================================ */
+
+#user-menu a:hover {
+  background-color: rgba(104, 53, 49, 0.07);
+  color: #a0191e;
+}
+
+#user-menu button:hover {
+  background-color: rgba(160, 25, 30, 0.07);
+}

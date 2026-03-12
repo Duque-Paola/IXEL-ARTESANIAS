@@ -235,36 +235,92 @@ document.addEventListener('click', (e) => {
 // --- DELEGACIÓN DE EVENTOS PARA AGREGAR AL CARRITO ---
 if (cardsContainer) {
   cardsContainer.addEventListener('click', async (e) => {
-    // Detectamos si se hizo clic en el botón de agregar
     const btn = e.target.closest('.product-card__add-btn');
-    
-    // Si no es el botón o está deshabilitado (sin stock), no hacemos nada
+
     if (!btn || btn.classList.contains('product-card__add-btn--disabled')) return;
 
     const productId = btn.dataset.id;
-    
-    // Buscamos el producto en nuestra lista global
     const product = allProducts.find(p => String(p.id) === String(productId));
 
     if (product) {
-      // 1. Agregamos al storage
       import('../../utils/storage.js').then(module => {
+        // 1. Agregar al storage
         module.addToCart(product);
 
-        // 2. Disparamos evento para que el carrito lateral se actualice/abra
+        // 2. Disparar evento para que el carrito lateral se actualice/abra
         window.dispatchEvent(new StorageEvent('storage', { key: 'cart' }));
 
-        // 3. FEEDBACK VISUAL: La palomita (✓)
-        const originalText = btn.innerHTML;
-        btn.innerHTML = '✓'; // Cambiamos el texto a una palomita
-        btn.classList.add('btn-success-anim'); // Opcional: clase para color verde
+        // 3. Palomita ✓ por 2 segundos
+        btn.innerHTML = '✓';
+        btn.classList.add('btn-success-anim');
 
-        // 4. Regresamos al estado original tras 2 segundos
+        // 4. Tras 2 segundos → mostrar contador −  n  +
         setTimeout(() => {
-          btn.innerHTML = originalText;
           btn.classList.remove('btn-success-anim');
-        }, 2000);
+          replaceWithCounter(btn, product, module);
+        }, 1000);
       });
     }
   });
+}
+
+// Reemplaza el botón "+" por un contador  −  n  +
+function replaceWithCounter(btn, product, storageModule) {
+  const cart = storageModule.getCart();
+  const item = cart.find(p => String(p.id) === String(product.id));
+  const currentQty = item ? item.quantity : 1;
+
+  const counter = document.createElement('div');
+  counter.className  = 'product-card__counter';
+  counter.dataset.id = product.id;
+  counter.innerHTML  = `
+    <button class="product-card__counter-btn product-card__counter-minus" type="button">−</button>
+    <span class="product-card__counter-num">${currentQty}</span>
+    <button class="product-card__counter-btn product-card__counter-plus"  type="button">+</button>
+  `;
+
+  btn.replaceWith(counter);
+
+  const minusBtn = counter.querySelector('.product-card__counter-minus');
+  const plusBtn  = counter.querySelector('.product-card__counter-plus');
+  const numEl    = counter.querySelector('.product-card__counter-num');
+
+  plusBtn.addEventListener('click', () => {
+    const cart  = storageModule.getCart();
+    const index = cart.findIndex(p => String(p.id) === String(product.id));
+    if (index < 0) return;
+    cart[index].quantity += 1;
+    numEl.textContent = cart[index].quantity;
+    storageModule.saveCart(cart);
+    window.dispatchEvent(new StorageEvent('storage', { key: 'cart' }));
+  });
+
+  minusBtn.addEventListener('click', () => {
+    const cart  = storageModule.getCart();
+    const index = cart.findIndex(p => String(p.id) === String(product.id));
+    if (index < 0) return;
+
+    if (cart[index].quantity > 1) {
+      // Decrementar
+      cart[index].quantity -= 1;
+      numEl.textContent = cart[index].quantity;
+      storageModule.saveCart(cart);
+      window.dispatchEvent(new StorageEvent('storage', { key: 'cart' }));
+    } else {
+      // Llega a 0: eliminar del carrito y restaurar botón "+"
+      cart.splice(index, 1);
+      storageModule.saveCart(cart);
+      window.dispatchEvent(new StorageEvent('storage', { key: 'cart' }));
+      restoreAddButton(counter, product);
+    }
+  });
+}
+
+// Restaura el botón "+" original
+function restoreAddButton(el, product) {
+  const btn = document.createElement('button');
+  btn.className  = 'product-card__add-btn';
+  btn.dataset.id = product.id;
+  btn.innerHTML  = '+';
+  el.replaceWith(btn);
 }
