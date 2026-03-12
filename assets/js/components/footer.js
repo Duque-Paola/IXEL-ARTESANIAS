@@ -8,67 +8,58 @@ export function createFooter() {
   return `
     <div class="footer">
       <div class="footer__container">
-        
-        <!-- COLUMNA IZQUIERDA: Enlaces, Información y Contacto -->
         <div class="footer__left">
-          
           <!-- Enlaces Rápidos -->
           <section class="footer__section">
-            <h4 class="footer__title">Enlaces Rápidos</h4>
+            <h4 class="footer__title" data-section="footer" data-value="quickLinks">Enlaces Rápidos</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="/index.html" class="footer__link">Inicio</a>
+                <a href="/index.html" class="footer__link" data-section="footer" data-value="home">Inicio</a>
               </li>
               <li class="footer__list-item">
-                <a href="/pages/public/products.html" class="footer__link">Productos</a>
+                <a href="/pages/public/products.html" class="footer__link" data-section="footer" data-value="products">Productos</a>
               </li>
               <li class="footer__list-item">
-                <a href="/pages/public/about.html" class="footer__link">Nosotros</a>
+                <a href="/pages/public/about.html" class="footer__link" data-section="footer" data-value="about">Nosotros</a>
               </li>
               <li class="footer__list-item">
-                <a href="/pages/public/contact.html" class="footer__link">Contacto</a>
+                <a href="/pages/public/contact.html" class="footer__link" data-section="footer" data-value="contact">Contacto</a>
               </li>
             </ul>
           </section>
-
           <!-- Información -->
           <section class="footer__section">
-            <h4 class="footer__title">Información</h4>
+            <h4 class="footer__title" data-section="footer" data-value="information">Información</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="/pages/public/about.html" class="footer__link">Sobre nosotros</a>
+                <a href="/pages/public/about.html" class="footer__link" data-section="footer" data-value="aboutUs">Sobre nosotros</a>
               </li>
               <li class="footer__list-item">
-                <a href="#" class="footer__link">Términos y condiciones</a>
+                <a href="#" class="footer__link" data-section="footer" data-value="terms">Términos y condiciones</a>
               </li>
               <li class="footer__list-item">
-                <a href="#" class="footer__link">Política de privacidad</a>
+                <a href="#" class="footer__link" data-section="footer" data-value="privacy">Política de privacidad</a>
               </li>
             </ul>
           </section>
-
           <!-- Contacto -->
           <section class="footer__section">
-            <h4 class="footer__title">Contacto</h4>
-            <ul class="footer__list">
+            <h4 class="footer__title" data-section="footer" data-value="contactTitle">Contacto</h4>
+            <ul class="footer__list" role="list">
               <li class="footer__list-item">
-                <a href="tel:+523346675957" class="footer__link">+52 33 4667 5957</a>
+                <a href="tel:+523346675957" class="footer__link">+52 1 33 4667 5957</a>
               </li>
               <li class="footer__list-item">
                 <a href="mailto:ixelartesanias@gmail.com" class="footer__link">ixelartesanias@gmail.com</a>
               </li>
               <li class="footer__list-item">
-                <span class="footer__link">Jalisco, México</span>
+                <span class="footer__link" data-section="footer" data-value="location">Jalisco, México</span>
               </li>
             </ul>
           </section>
-          
         </div>
-
-        <!-- COLUMNA DERECHA: Redes Sociales + Monograma -->
         <div class="footer__right">
-          
-          <!-- Redes sociales en línea horizontal -->
+          <!-- Redes -->
           <div class="footer__social">
             <a href="https://www.facebook.com/profile.php?id=61578116663335" 
                target="_blank" 
@@ -123,13 +114,10 @@ export function createFooter() {
           <div class="footer__monogram">
             <img src="/assets/img/icons/x.png" alt="IXEL Monograma" class="footer__monogram-image">
           </div>
-
         </div>
         
       </div>
     </div>
-    
-    <!-- Cenefa decorativa inferior -->
     <div class="footer__border" role="presentation" aria-hidden="true">
       <img src="/assets/img/icons/cenefa.png" alt="" class="footer__border-image">
     </div>
