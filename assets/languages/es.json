@@ -24,6 +24,10 @@
   },
   "products": {
     "featured": "Productos Imprescindibles"
+
+  }
+}
+
   },
   "about": {
 
@@ -57,3 +61,4 @@
   "location": "Jalisco, México"
 }
 }
+
