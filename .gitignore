@@ -1,1 +1,13 @@
 package-lock.json
+# --- SEGURIDAD ---
+# Archivo con las llaves de EmailJS (Ixel Artesanías)
+env.js
+.env
+
+# --- ARCHIVOS DE SISTEMA ---
+.DS_Store
+Thumbs.db
+
+# --- TEMPORALES / LOGS ---
+*.log
+npm-debug.log*
