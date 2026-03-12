@@ -117,8 +117,8 @@ export function createFooter() {
                 </g>
               </svg>
             </a>
-          </div>
-
+          </nav>
+     
           <!-- Monograma centrado debajo de redes -->
           <div class="footer__monogram">
             <img src="/assets/img/icons/x.png" alt="IXEL Monograma" class="footer__monogram-image">
