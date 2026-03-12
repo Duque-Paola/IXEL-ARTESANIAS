@@ -1,21 +1,23 @@
 <form class="row g-3">
     <div class="col-md-6">
-        <label for="inputEmail" class="form-label">Email</label>
+        <label for="inputEmail" class="form-label">Email *</label>
         <input type="email" class="form-control" id="inputEmail">
     </div>
     <div class="col-md-6">
-        <label for="inputPassword" class="form-label">Contraseña</label>
+        <label for="inputPassword" class="form-label">Contraseña *</label>
         <input type="password" class="form-control" id="inputPassword">
     </div>
     <div class="col-md-6">
         <label for="inputEmail2" class="form-label">Ingresa otro email (opcional)</label>
         <input type="email" class="form-control" id="inputEmail2">
     </div>
-    <div class="col-12">
-        <button type="edit" class="btn btn-primary boton">Editar</button>
-    </div>
-    <div class="col-12">
-        <button type="submit" class="btn btn-primary boton">Guardar</button>
+    <div class="d-flex flex-row m-5">
+        <div class="col-6">
+            <button type="submit" class="btn btn-primary boton w-75" id="edit2">Editar</button>
+        </div>
+        <div class="col-6">
+            <button type="submit" class="btn btn-primary boton w-75" id="save2">Guardar</button>
+        </div>
     </div>
     <div class="mt-5">
         <div class="divider my-4"><h2 class="text-danger fs-4">Eliminar Cuenta</h2></div>
