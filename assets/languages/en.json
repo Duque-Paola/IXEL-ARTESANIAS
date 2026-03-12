@@ -1,0 +1,29 @@
+{
+  "navbar": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "seeMore": "See more"
+  },
+  "materials": {
+    "title": "What we are made of",
+    "parotaTitle": "Parota",
+    "parotaText": "With deep grains and an untamed character. We select the finest Parota wood from Jalisco to create pieces that breathe the strength of our land.",
+
+    "ironTitle": "Iron",
+    "ironText": "Where fire becomes art. Our cast iron handles are handcrafted by Mexican artisans, creating unique and unrepeatable pieces.",
+
+    "clayTitle": "Clay",
+    "clayText": "Shaped by history. Each piece is born from Chiapas clay, transformed by the hands and brushes of indigenous women who express their worldview in every stroke.",
+
+    "metalTitle": "Metal",
+    "metalText": "A flower that never fades. This emblematic design pays tribute to the City of Roses (Guadalajara), capturing the delicacy of its roses in locally forged metal."
+  },
+  "products": {
+    "featured": "Featured Products"
+  }
+
+}

@@ -1,11 +1,11 @@
 <form class="row g-3">
     
     <div class="col-12">
-        <label for="inputAddress" class="form-label">Calle</label>
+        <label for="inputAddress" class="form-label">Calle *</label>
         <input type="text" class="form-control" id="inputAddress" placeholder="Ej: Avenida Insurgentes">
     </div>
     <div class="col-6">
-        <label for="inputExt" class="form-label">Número exterior</label>
+        <label for="inputExt" class="form-label">Número exterior *</label>
         <input type="text" class="form-control" id="inputExt" placeholder="Ej: 1234">
     </div>
     <div class="col-6">
@@ -13,36 +13,38 @@
         <input type="text" class="form-control" id="inputDep" placeholder="Ej: 012">
     </div>
     <div class="col-6">
-        <label for="inputAddress2" class="form-label">Código Postal</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Ej: 01234">
+        <label for="inputZip" class="form-label">Código Postal *</label>
+        <input type="text" class="form-control" id="inputZip" placeholder="Ej: 01234">
     </div>
     <div class="col-md-6">
         <label for="inputCity" class="form-label">Municipio</label>
         <input type="text" class="form-control" id="inputCity">
     </div>
     <div class="col-md-6">
-        <label for="inputState" class="form-label">Estado</label>
+        <label for="inputState" class="form-label">Estado *</label>
         <input type="text" class="form-control" id="inputState">
     </div>
     <div class="col-md-6">
-        <label for="inputCountry" class="form-label">País</label>
+        <label for="inputCountry" class="form-label">País *</label>
         <input type="text" class="form-control" id="inputCountry">
     </div>
     <div class="col-md-6">
-        <label for="inputState" class="form-label">Tipo de domicilio</label>
-        <select id="inputState" class="form-select">
-            <option selected>Residencial</option>
-            <option>Laboral</option>
+        <label for="inputAddressType" class="form-label">Tipo de domicilio</label>
+        <select id="inputAddressType" class="form-select">
+            <option value = "Residencial">Residencial</option>
+            <option value = "Laboral">Laboral</option>
         </select>
     </div>
     <div class="col-12">
         <label for="inputIns" class="form-label">Instrucciones de entrega</label>
         <input type="text" class="form-control" id="inputIns" placeholder="Ej: Entre calles, color del edificio, no tiene timbre">
     </div>
-    <div class="col-6">
-        <button type="submit" class="btn btn-primary boton">Editar</button>
-    </div>
-    <div class="col-12">
-        <button type="submit" class="btn btn-primary boton">Guardar</button>
+    <div class="d-flex flex-row m-5">
+        <div class="col-6">
+            <button type="submit" class="btn btn-primary boton w-75" id="edit3">Editar</button>
+        </div>
+        <div class="col-6">
+            <button type="submit" class="btn btn-primary boton w-75" id="save3">Guardar</button>
+        </div>
     </div>
 </form>

@@ -39,7 +39,7 @@
 }
 
 .boton {
-    border-radius: 0px;
+    border-radius: 50px;
     background-color: #683531;
 }
 
@@ -53,4 +53,9 @@
 
 .close {
     font-size: 25px;
+    border-radius: 50px;
+}
+
+#remove {
+    border-radius: 50px;
 }
