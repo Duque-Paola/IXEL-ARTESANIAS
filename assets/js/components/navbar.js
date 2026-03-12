@@ -48,10 +48,10 @@ export function createNavbar() {
 
       <nav class="navbar__nav" id="navbar-nav" aria-label="Navegación principal">
         <ul class="navbar__links" role="list">
-          <li><a href="/index.html"                 class="navbar__link">Inicio</a></li>
-          <li><a href="/pages/public/products.html" class="navbar__link">Productos</a></li>
-          <li><a href="/pages/public/about.html"    class="navbar__link">Nosotros</a></li>
-          <li><a href="/pages/public/contact.html"  class="navbar__link">Contacto</a></li>
+          <li><a href="/index.html"                 class="navbar__link" data-section ="navbar" data-value="home">Inicio</a></li>
+          <li><a href="/pages/public/products.html" class="navbar__link" data-section="navbar" data-value="products">Productos</a></li>
+          <li><a href="/pages/public/about.html"    class="navbar__link" data-section="navbar" data-value="about">Nosotros</a></li>
+          <li><a href="/pages/public/contact.html"  class="navbar__link" data-section="navbar" data-value="contact">Contacto</a></li>
 
           <li class="navbar__mobile-actions" role="none">
             <button class="navbar__mobile-action" data-action="search" aria-label="Buscar" type="button">
@@ -59,7 +59,7 @@ export function createNavbar() {
                 <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
                 <path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               </svg>
-              <span class="navbar__mobile-action-text">Buscar</span>
+              <span class="navbar__mobile-action-text" data-section="navbar" data-value="search">Buscar</span>
             </button>
 
             <a href="/pages/public/car.html" class="navbar__mobile-action" aria-label="Mi carrito">
@@ -68,22 +68,30 @@ export function createNavbar() {
                 <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <path d="M16 10a4 4 0 01-8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <span class="navbar__mobile-action-text">Mi carrito</span>
-              <span id="cart-count-mobile" class="navbar__mobile-badge" aria-label="artículos en el carrito">0</span>
+              <span class="navbar__mobile-action-text" data-section="navbar" data-value="cart">Mi carrito</span>
+              <span id="cart-count-mobile" class="navbar__mobile-badge" aria-label="artículos en el carrito" >0</span>
             </a>
-
             <a href="/pages/public/profile.html" class="navbar__mobile-action" aria-label="Mi perfil">
               <svg class="navbar__mobile-action-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <span class="navbar__mobile-action-text">Mi perfil</span>
+              <span class="navbar__mobile-action-text" data-section="navbar" data-value="profile">Mi perfil</span>
             </a>
+            <div class="languages-mobile">
+               <button class="lang-button" data-language="es"><img width="48" height="48" src="https://img.icons8.com/color/48/mexico.png" alt="mexico"/></button>
+               <button class="lang-button" data-language="en"><img width="48" height="48" src="https://img.icons8.com/color/48/usa.png" alt="usa"/></button>
+            </div>
           </li>
         </ul>
       </nav>
 
       <div class="navbar__actions navbar__actions--desktop" role="group" aria-label="Acciones">
+
+      <div class="languages">
+          <button class="lang-button" data-language="es" aria-label="Cambiar a español"><img width="48" height="48" src="https://img.icons8.com/color/48/mexico.png" alt="mexico"/></button>
+          <button class="lang-button" data-language="en" aria-label="Change to English"><img width="48" height="48" src="https://img.icons8.com/color/48/usa.png" alt="usa"/></button>
+      </div>
 
         <button
           class="navbar__bubble navbar__bubble--search"
@@ -167,6 +175,7 @@ export function createNavbar() {
           type="search"
           class="navbar__search-input"
           placeholder="Buscar productos…"
+          data-section="navbar" data-value="searchPlaceholder"
           id="search-input"
           autocomplete="off"
         >
