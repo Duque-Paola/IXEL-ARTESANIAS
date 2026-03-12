@@ -24,5 +24,41 @@
   },
   "products": {
     "featured": "Productos Imprescindibles"
+<<<<<<< HEAD
   }
 }
+=======
+  },
+  "about": {
+
+    "heroTitle": "Hecho con pasión",
+
+    "olinalaTitle": "Colección Olinalá",
+    "olinalaText": "Colección Panal rinde homenaje a la legendaria técnica de laqueado de Guerrero, México. Cada pieza es una obra maestra de paciencia y detalle, elaborada en madera de lináloe. Sobre ella se aplica una pasta hecha de aceite de chía y pigmento mineral llamado tecostle. Con una espina de huizache o pluma de gallina se detallan todos los dibujos que decoran nuestras tapas de tortillero. Cada diseño de esta colección es único y preserva siglos de historia y cultura mexicana.",
+
+    "martinaTitle": "Colección Martina",
+    "martinaText": "La colección Martina celebra la unión entre madera y metal trabajado por manos artesanas. Cada pieza refleja la tradición del trabajo manual mexicano, donde la fuerza del hierro y la calidez de la madera se combinan para crear piezas funcionales y llenas de carácter.",
+
+    "jaguarTitle": "Colección Jaguar",
+    "jaguarText": "Evocando la selva y la cultura chiapaneca, esta colección representa el símbolo de fuerza y conexión espiritual: el Jaguar. En Amatenango del Valle, la alfarera Juana Gómez moldea a mano cada figura en barro blanco y después pinta con pincel patrones simétricos que conectan tradición, cultura y naturaleza.",
+
+    "panalTitle": "Colección Panal",
+    "panalText": "Nuestra colección Panal celebra el trabajo artesanal mexicano inspirado en las formas de la naturaleza. Cada pieza está diseñada para transmitir armonía, tradición y belleza, integrando técnicas artesanales con diseños contemporáneos que destacan en cualquier espacio."
+  },
+  "footer": {
+  "quickLinks": "Enlaces Rápidos",
+  "home": "Inicio",
+  "products": "Productos",
+  "about": "Nosotros",
+  "contact": "Contacto",
+
+  "information": "Información",
+  "aboutUs": "Sobre nosotros",
+  "terms": "Términos y condiciones",
+  "privacy": "Política de privacidad",
+
+  "contactTitle": "Contacto",
+  "location": "Jalisco, México"
+}
+}
+>>>>>>> feature/diana-lopez

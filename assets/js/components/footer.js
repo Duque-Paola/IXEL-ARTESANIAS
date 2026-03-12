@@ -8,53 +8,53 @@ export function createFooter() {
   return `
     <div class="footer">
       <div class="footer__container">
-        
-        <!-- COLUMNA IZQUIERDA: Enlaces, Información y Contacto -->
         <div class="footer__left">
-          
           <!-- Enlaces Rápidos -->
           <section class="footer__section">
-            <h4 class="footer__title">Enlaces Rápidos</h4>
+            <h4 class="footer__title" data-section="footer" data-value="quickLinks">Enlaces Rápidos</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="/index.html" class="footer__link">Inicio</a>
+                <a href="/index.html" class="footer__link" data-section="footer" data-value="home">Inicio</a>
               </li>
               <li class="footer__list-item">
-                <a href="/pages/public/products.html" class="footer__link">Productos</a>
+                <a href="/pages/public/products.html" class="footer__link" data-section="footer" data-value="products">Productos</a>
               </li>
               <li class="footer__list-item">
-                <a href="/pages/public/about.html" class="footer__link">Nosotros</a>
+                <a href="/pages/public/about.html" class="footer__link" data-section="footer" data-value="about">Nosotros</a>
               </li>
               <li class="footer__list-item">
-                <a href="/pages/public/contact.html" class="footer__link">Contacto</a>
+                <a href="/pages/public/contact.html" class="footer__link" data-section="footer" data-value="contact">Contacto</a>
               </li>
             </ul>
           </section>
-
           <!-- Información -->
-
           <section class="footer__section">
-            <h4 class="footer__title">Información</h4>
+            <h4 class="footer__title" data-section="footer" data-value="information">Información</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="/pages/public/about.html" class="footer__link">Sobre nosotros</a>
+                <a href="/pages/public/about.html" class="footer__link" data-section="footer" data-value="aboutUs">Sobre nosotros</a>
               </li>
               <li class="footer__list-item">
-                <a href="#" class="footer__link">Términos y condiciones</a>
+                <a href="#" class="footer__link" data-section="footer" data-value="terms">Términos y condiciones</a>
               </li>
               <li class="footer__list-item">
-                <a href="#" class="footer__link">Política de privacidad</a>
+                <a href="#" class="footer__link" data-section="footer" data-value="privacy">Política de privacidad</a>
               </li>
             </ul>
           </section>
-
           <!-- Contacto -->
           <section class="footer__section">
-            <h4 class="footer__title">Contacto</h4>
+            <h4 class="footer__title" data-section="footer" data-value="contactTitle">Contacto</h4>
             <ul class="footer__list" role="list">
-              <li class="footer__list-item"><a href="tel:+523346675957"                   class="footer__link">+52 1 33 4667 5957</a></li>
-              <li class="footer__list-item"><a href="mailto:ixelartesanias@gmail.com"  class="footer__link">ixelartesanias@gmail.com</a></li>
-              <li class="footer__list-item"><span class="footer__link">Jalisco, México</span></li>
+              <li class="footer__list-item">
+                <a href="tel:+523346675957" class="footer__link">+52 1 33 4667 5957</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="mailto:ixelartesanias@gmail.com" class="footer__link">ixelartesanias@gmail.com</a>
+              </li>
+              <li class="footer__list-item">
+                <span class="footer__link" data-section="footer" data-value="location">Jalisco, México</span>
+              </li>
             </ul>
           </section>
           
@@ -89,19 +89,28 @@ export function createFooter() {
               </svg>
             </a>
 
-            <a href="mailto:ixelartesanias@gmail.com"
-               class="footer__social-link" aria-label="Correo electrónico">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="2" y="4" width="20" height="16" rx="2" stroke="#F2D5C1" stroke-width="2"/>
-                <path d="M2 7l10 7 10-7" stroke="#F2D5C1" stroke-width="2" stroke-linecap="round"/>
+            <a href="mailto:contacto@ixelartesanias.com" 
+               class="footer__social-link"
+               aria-label="Email">
+              <svg width="40" height="40" viewBox="0 -4 32 32" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-412.000000, -259.000000)" fill="#F2D5C1">
+                  <path d="M442,279 C442,279.203 441.961,279.395 441.905,279.578 L433,270 L442,263 L442,279 L442,279 Z M415.556,280.946 L424.58,271.33 L428,273.915 L431.272,271.314 L440.444,280.946 C440.301,280.979 415.699,280.979 415.556,280.946 L415.556,280.946 Z M414,279 L414,263 L423,270 L414.095,279.578 C414.039,279.395 414,279.203 414,279 L414,279 Z M441,261 L428,271 L415,261 L441,261 L441,261 Z M440,259 L416,259 C413.791,259 412,260.791 412,263 L412,279 C412,281.209 413.791,283 416,283 L440,283 C442.209,283 444,281.209 444,279 L444,263 C444,260.791 442.209,259 440,259 L440,259 Z"/>
+                </g>
               </svg>
             </a>
 
-            <a href="http://wa.me/523330336808"
-                target="_blank" rel="noopener noreferrer"
-                class="footer__social-link" aria-label="WhatsApp">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#F2D5C1" width="600px" height="800px" viewBox="-1.66 0 740.824 740.824"><path fill-rule="evenodd" clip-rule="evenodd" d="M630.056 107.658C560.727 38.271 468.525.039 370.294 0 167.891 0 3.16 164.668 3.079 367.072c-.027 64.699 16.883 127.855 49.016 183.523L0 740.824l194.666-51.047c53.634 29.244 114.022 44.656 175.481 44.682h.151c202.382 0 367.128-164.689 367.21-367.094.039-98.088-38.121-190.32-107.452-259.707m-259.758 564.8h-.125c-54.766-.021-108.483-14.729-155.343-42.529l-11.146-6.613-115.516 30.293 30.834-112.592-7.258-11.543c-30.552-48.58-46.689-104.729-46.665-162.379C65.146 198.865 202.065 62 370.419 62c81.521.031 158.154 31.81 215.779 89.482s89.342 134.332 89.311 215.859c-.07 168.242-136.987 305.117-305.211 305.117m167.415-228.514c-9.176-4.591-54.286-26.782-62.697-29.843-8.41-3.061-14.526-4.591-20.644 4.592-6.116 9.182-23.7 29.843-29.054 35.964-5.351 6.122-10.703 6.888-19.879 2.296-9.175-4.591-38.739-14.276-73.786-45.526-27.275-24.32-45.691-54.36-51.043-63.542-5.352-9.183-.569-14.148 4.024-18.72 4.127-4.11 9.175-10.713 13.763-16.07 4.587-5.356 6.116-9.182 9.174-15.303 3.059-6.122 1.53-11.479-.764-16.07-2.294-4.591-20.643-49.739-28.29-68.104-7.447-17.886-15.012-15.466-20.644-15.746-5.346-.266-11.469-.323-17.585-.323-6.117 0-16.057 2.296-24.468 11.478-8.41 9.183-32.112 31.374-32.112 76.521s32.877 88.763 37.465 94.885c4.587 6.122 64.699 98.771 156.741 138.502 21.891 9.45 38.982 15.093 52.307 19.323 21.981 6.979 41.983 5.994 57.793 3.633 17.628-2.633 54.285-22.19 61.932-43.616 7.646-21.426 7.646-39.791 5.352-43.617-2.293-3.826-8.41-6.122-17.585-10.714"/></svg>
-
+            <a href="http://wa.me/523330336808" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="footer__social-link"
+               aria-label="WhatsApp">
+              <svg width="40" height="40" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-300.000000, -7599.000000)" fill="#F2D5C1">
+                  <g transform="translate(56.000000, 160.000000)">
+                    <path d="M259.821,7453.12124 C259.58,7453.80344 258.622,7454.36761 257.858,7454.53266 C257.335,7454.64369 256.653,7454.73172 254.355,7453.77943 C251.774,7452.71011 248.19,7448.90097 248.19,7446.36621 C248.19,7445.07582 248.934,7443.57337 250.235,7443.57337 C250.861,7443.57337 250.999,7443.58538 251.205,7444.07952 C251.446,7444.6617 252.034,7446.09613 252.104,7446.24317 C252.393,7446.84635 251.81,7447.19946 251.387,7447.72462 C251.252,7447.88266 251.099,7448.05372 251.27,7448.3478 C251.44,7448.63589 252.028,7449.59418 252.892,7450.36341 C254.008,7451.35771 254.913,7451.6748 255.237,7451.80984 C255.478,7451.90987 255.766,7451.88687 255.942,7451.69881 C256.165,7451.45774 256.442,7451.05762 256.724,7450.6635 C256.923,7450.38141 257.176,7450.3464 257.441,7450.44643 C257.62,7450.50845 259.895,7451.56477 259.991,7451.73382 C260.062,7451.85686 260.062,7452.43903 259.821,7453.12124 M254.002,7439 L253.997,7439 L253.997,7439 C248.484,7439 244,7443.48535 244,7449 C244,7451.18666 244.705,7453.21526 245.904,7454.86076 L244.658,7458.57687 L248.501,7457.3485 C250.082,7458.39482 251.969,7459 254.002,7459 C259.515,7459 264,7454.51465 264,7449 C264,7443.48535 259.515,7439 254.002,7439"/>
+                  </g>
+                </g>
+              </svg>
             </a>
           </nav>
      
