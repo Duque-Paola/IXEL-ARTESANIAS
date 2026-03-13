@@ -115,7 +115,7 @@ export function createNavbar() {
           class="navbar__bubble navbar__bubble--cart header-cart"
           aria-label="Abrir carrito de compras"
           type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="500.000000pt" height="499.000000pt" viewBox="0 0 500.000000 499.000000" preserveAspectRatio="xMidYMid meet">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="40pt" height="40pt" viewBox="0 0 500.000000 499.000000" preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,499.000000) scale(0.100000,-0.100000)" fill="rgb(255, 255, 255)" stroke="none">
 <path d="M2205 4524 c-291 -72 -480 -247 -554 -511 -15 -57 -20 -107 -21 -245 -1 -95 -1 -188 -1 -205 l1 -33 105 0 105 0 0 170 c0 93 5 193 11 222 53 252 307 431 552 388 106 -18 190 -62 268 -139 119 -119 149 -212 149 -468 l0 -173 104 0 c85 0 105 3 110 16 9 25 7 218 -4 337 -28 292 -207 519 -485 616 -57 20 -93 25 -195 27 -69 2 -134 1 -145 -2z"/>
