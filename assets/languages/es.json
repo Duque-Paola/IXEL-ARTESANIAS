@@ -24,10 +24,10 @@
   },
   "products": {
     "featured": "Productos Imprescindibles"
-<<<<<<< HEAD
+
   }
 }
-=======
+
   },
   "about": {
 
@@ -61,4 +61,4 @@
   "location": "Jalisco, México"
 }
 }
->>>>>>> feature/diana-lopez
+
