@@ -11,43 +11,39 @@ export function createFooter() {
         
         <!-- COLUMNA IZQUIERDA: Enlaces, Información y Contacto -->
         <div class="footer__left">
-          
           <!-- Enlaces Rápidos -->
           <section class="footer__section">
-            <h4 class="footer__title">Enlaces Rápidos</h4>
+            <h4 class="footer__title" data-section="footer" data-value="quickLinks">Enlaces Rápidos</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="/index.html" class="footer__link">Inicio</a>
+                <a href="/index.html" class="footer__link" data-section="footer" data-value="home">Inicio</a>
               </li>
               <li class="footer__list-item">
-                <a href="/pages/public/products.html" class="footer__link">Productos</a>
+                <a href="/pages/public/products.html" class="footer__link" data-section="footer" data-value="products">Productos</a>
               </li>
               <li class="footer__list-item">
-                <a href="/pages/public/about.html" class="footer__link">Nosotros</a>
+                <a href="/pages/public/about.html" class="footer__link" data-section="footer" data-value="about">Nosotros</a>
               </li>
               <li class="footer__list-item">
-                <a href="/pages/public/contact.html" class="footer__link">Contacto</a>
+                <a href="/pages/public/contact.html" class="footer__link" data-section="footer" data-value="contact">Contacto</a>
               </li>
             </ul>
           </section>
-
-
           <!-- Información -->
           <section class="footer__section">
-            <h4 class="footer__title">Información</h4>
+            <h4 class="footer__title" data-section="footer" data-value="information">Información</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="/pages/public/about.html" class="footer__link">Sobre nosotros</a>
+                <a href="/pages/public/about.html" class="footer__link" data-section="footer" data-value="aboutUs">Sobre nosotros</a>
               </li>
               <li class="footer__list-item">
-                <a href="#" class="footer__link">Términos y condiciones</a>
+                <a href="#" class="footer__link" data-section="footer" data-value="terms">Términos y condiciones</a>
               </li>
               <li class="footer__list-item">
-                <a href="#" class="footer__link">Política de privacidad</a>
+                <a href="#" class="footer__link" data-section="footer" data-value="privacy">Política de privacidad</a>
               </li>
             </ul>
           </section>
-
           <!-- Contacto -->
           <section class="footer__section">
             <h4 class="footer__title">Contacto</h4>

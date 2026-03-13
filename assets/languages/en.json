@@ -24,6 +24,38 @@
   },
   "products": {
     "featured": "Featured Products"
-  }
 
+  },
+  "about": {
+
+    "heroTitle": "Crafted with passion",
+
+    "olinalaTitle": "Olinalá Collection",
+    "olinalaText": "The Panal Collection pays tribute to the legendary lacquer technique from Guerrero, Mexico. Each piece is a masterpiece of patience and detail, crafted from lináloe wood. A paste made from chia oil and mineral pigment called tecostle is applied to the surface. Using a huizache thorn or a feather, artisans carefully draw the intricate patterns that decorate our tortilla holders. Every design in this collection is unique and preserves centuries of Mexican history and culture.",
+
+    "martinaTitle": "Martina Collection",
+    "martinaText": "The Martina collection celebrates the union of wood and handcrafted metal. Each piece reflects the Mexican tradition of handmade work, where the strength of iron and the warmth of wood combine to create functional objects full of character.",
+
+    "jaguarTitle": "Jaguar Collection",
+    "jaguarText": "Evoking the jungle and the culture of Chiapas, this collection represents the symbol of strength and spiritual connection: the Jaguar. In Amatenango del Valle, artisan Juana Gómez hand-molds each piece in white clay and then paints symmetrical patterns that connect tradition, culture, and nature.",
+
+    "panalTitle": "Panal Collection",
+    "panalText": "Our Panal collection celebrates Mexican craftsmanship inspired by the shapes of nature. Each piece is designed to convey harmony, tradition, and beauty, blending artisanal techniques with contemporary design."
+  },
+  "footer": {
+  "quickLinks": "Quick Links",
+  "home": "Home",
+  "products": "Products",
+  "about": "About Us",
+  "contact": "Contact",
+
+  "information": "Information",
+  "aboutUs": "About us",
+  "terms": "Terms and Conditions",
+  "privacy": "Privacy Policy",
+
+  "contactTitle": "Contact",
+  "location": "Jalisco, Mexico"
 }
+}
+

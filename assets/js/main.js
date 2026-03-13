@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const textsToChange = document.querySelectorAll("[data-section]");
   langButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      fetch(`assets/languages/${button.dataset.language}.json`)
+      fetch("/assets/languages/" + button.dataset.language + ".json")
         .then(res => res.json())
         .then(data => {
           textsToChange.forEach((el) => {
