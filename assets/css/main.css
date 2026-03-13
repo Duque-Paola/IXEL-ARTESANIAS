@@ -67,12 +67,12 @@ body {
 /* Sección Imprescindibles */
 .imprescindibles-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto 100px;
+    padding-left: 80px; /* mueve los cards hacia la derecha */
 }
-
 .product-card {
     text-align: center;
     width: 300px;

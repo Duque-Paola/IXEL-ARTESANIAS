@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(products => {
       localStorage.setItem('products', JSON.stringify(products));
 
-      const selectedIds      = [1, 3, 4];
+      const selectedIds      = [11, 6, 9];
       const selectedProducts = products.filter(p => selectedIds.includes(p.id));
 
       selectedProducts.forEach(product => {
