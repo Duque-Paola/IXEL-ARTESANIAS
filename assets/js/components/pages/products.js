@@ -192,7 +192,6 @@ document.querySelectorAll(".selectable-list a").forEach(link => {
 
 
 
-
 //!funcionalidad de flechas de seccion de productos
 document.addEventListener('DOMContentLoaded', () => {
   const list = document.getElementById('subCategoryList');
