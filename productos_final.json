@@ -1046,7 +1046,7 @@
         "price": 1137.5,
         "collection": "Olinala",
         "description": "Servilletero Olinala. Pieza exclusiva fabricada en madera de Parota del estado de Jalisco. Producto artesanal hecho a mano, pintado y esculpido por artesanos mexicanos.",
-        "imagen": "/assets/img/products/Tortillero Martina Grises.png",
+        "imagen": "/assets/img/products/Servilletero Olinala.png",
         "stock": 10
     },
     {
@@ -1236,7 +1236,7 @@
         "price": 2437.5,
         "collection": "Olinala",
         "description": "Charola chica Olinala. Pieza exclusiva fabricada en madera de Parota del estado de Jalisco. Producto artesanal hecho a mano, pintado y esculpido por artesanos mexicanos.",
-        "imagen": "/assets/img/products/Tortillero Martina Grises.png",
+        "imagen": "/assets/img/products/Charola chica Olinala.png",
         "stock": 6
     },
     {
@@ -1356,7 +1356,7 @@
         "price": 2587.5,
         "collection": "Olinala",
         "description": "Charola redonda Olinala. Pieza exclusiva fabricada en madera de Parota del estado de Jalisco. Producto artesanal hecho a mano, pintado y esculpido por artesanos mexicanos.",
-        "imagen": "/assets/img/products/Tortillero Martina Grises.png",
+        "imagen": "/assets/img/products/Charola redonda Olinala.png",
         "stock": 12
     },
     {
